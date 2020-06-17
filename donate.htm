@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div class="donate">
+    <h1>Payment:</h1>
+<p></p>All the donations will directly go towards ensuring that Oscar 
+gets to spend a night at the Red Light District (that is the least we can do for him) as well as finding ways to save this endangered species:</p>
+</div>
+
+<div class="payment">
+   <div><label> Card Number</label> <br>
+    <input class="one"type="text" placeholder="xxxx-xxxx-xxxx-xxxx"><br>
+
+    
+        <label>Expiry Date</label><br>
+        <input class="one" type="text" placeholder="mm"><br>
+        <div class="yy"></div>
+        <input class="one" type="text" placeholder="yyyy"><br>
+       </div>
+    
+        <label>CVC</label><br>
+        <input class="one" type="text" placeholder="xxx" type="password"><br>
+
+    
+    <label>Card Holder Name</label><br>
+    <input class="one" type="text" placeholder="Full Name"><br>
+    <label>Choose the amount:</label><br>
+   $5 <input type="checkbox"> $10 <input type="checkbox"> $15<input type="checkbox"> $20<input type="checkbox">
+</div>
+
+<div class="submit">
+<input  class= "submit1" type="submit" value="Submit" onclick="showImage() ; toggleText()">
+</div> 
+<div>
+<img id="loadingImage" src="Meme.JPG" style="visibility:hidden"/>
+</div>
+<p id='demo' style='display: none'> PS: You did not fill in the details, did you?</p>  
+<br><br>
+<script>
+function showImage(){
+    document.getElementById('loadingImage').style.visibility="visible";
+}
+
+function toggleText() {
+    var text = document.getElementById("demo");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+</script>
+ 
+<body>
+</html>
